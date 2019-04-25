@@ -4,15 +4,14 @@ def popular_words(text,words):
     result = {}
     text=text.lower()
     text_seperate=text.split(' ')
+    print(text_seperate)
     
     for i in range(len(words)):
         count_num = 0
         for j in range(len(text_seperate)):
             if words[i] == text_seperate[j]:
                 count_num += 1
-                count_number.append(count_num)
-            else:
-                count_number.append(count_num)
+        count_number.append(count_num)
             
     for j in range(len(answer)):
         result[answer[j]] = count_number[j]
